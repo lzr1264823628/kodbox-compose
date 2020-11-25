@@ -7,7 +7,7 @@ services:
     container_name: kodbox_db
     volumes:
       - "./db:/var/lib/mysql"
-      - "./mysql-init-files:/docker-entrypoint-initdb.d"
+      - "./mysql.sql:/docker-entrypoint-initdb.d/mysql.sql"
     environment:
       - "TZ"
       - "MYSQL_ALLOW_EMPTY_PASSWORD=yes"
