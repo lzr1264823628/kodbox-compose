@@ -26,8 +26,8 @@ services:
       - db
       - redis
     volumes:
-      - "/etc/data:/var/www/html"
-      - "/etc/private-ssl:/etc/nginx/ssl"
+      - "./data:/var/www/html"
+      - "./private-ssl:/etc/nginx/ssl"
     environment:
       - "MYSQL_SERVER"
       - "MYSQL_DATABASE"
