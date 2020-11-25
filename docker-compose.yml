@@ -20,8 +20,8 @@ services:
     image: fanickee/kodbox
     container_name: kodbox
     ports:
-      - 1080:80
-      - 1043:443
+      - 80:80
+      - 443:443
     depends_on:
       - db
       - redis
